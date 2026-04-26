@@ -3,7 +3,7 @@
 ## Overview
 This repository contains my personal infrastructure configurations, custom Dockerfiles, and automation scripts used to deploy, manage, and maintain experimental Web3 and AI compute nodes (e.g., Gensyn, Gaianet, Drosera) in a headless Linux environment.
 
-Many of these alpha-stage projects lack stable official deployment guides. This repository serves as my personal toolkit to resolve build failures, patch dependencies, and establish stable execution environments across my homelab.
+Many of these alpha-stage projects lack stable official deployment guides or are designed for environments different from my own. This repository serves as my personal "system journal" and toolkit to resolve build failures, patch dependencies, and establish stable execution environments across my homelab. It reflects hours of troubleshooting networking conflicts and containerizing software that wasn't originally built for Docker.
 
 ## Repository Contents
 * **`rl-swarm/`**: Contains custom `Dockerfile.webserver` and `.sh` initialization scripts designed to containerize and deploy complex dependency-heavy software.
@@ -38,7 +38,7 @@ Here are the current statuses of my running nodes, proving stable uptime and con
 ## 概要
 このリポジトリは、ヘッドレスLinux環境において実験的なWeb3およびAIノード（Gensyn、Gaianet、Droseraなど）をデプロイ・管理・維持するために作成した、個人的なインフラ構成ファイル、カスタムDockerfile、自動化スクリプトの集積です。
 
-アルファ段階のプロジェクトは公式のデプロイ環境が不安定であることが多いため、ビルドエラーの解決や依存関係のパッチ当てを通じて、自身のホームラボ環境で安定して稼働させることを目的としています。
+アルファ段階のプロジェクトは公式のデプロイ環境が不安定であったり、私の環境（Linux headless）に完全に対応していないことが多いため、ビルドエラーの解決や依存関係のパッチ当てを通じて、自身のホームラボ環境で安定して稼働させることを目的としています。単に動かすだけでなく、Docker化されていないソフトウェアのコンテナ化や、ネットワーク競合の解消など、数時間の試行錯誤の結果をここに集約しています。
 
 ## 内容物
 * **`rl-swarm/`**: 複雑な依存関係を持つソフトウェアをコンテナ化してデプロイするためのカスタム `Dockerfile.webserver` および初期化スクリプト (`.sh`)。
