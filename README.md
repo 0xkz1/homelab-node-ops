@@ -29,7 +29,7 @@ Here are screenshots from the respective web dashboards of these decentralized n
 
 *(Note: Add your screenshot images here via GitHub!)*
 - **rl-swarm Dashboard:**
-  ![rl-swarm points]()
+  ![rl-swarm points](Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
 - **Gaianet Dashboard:**
   ![Gaianet points]()
 
@@ -69,7 +69,7 @@ Running experimental distributed nodes requires identical problem-solving method
 
 *(※ここにGithub上でダッシュボードのスクリーンショット画像をドラッグ・アンド・ドロップで貼り付けてください)*
 - **rl-swarm:**
-  ![rl-swarm points]()
+  ![rl-swarm points](Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
 - **Gaianet:**
   ![Gaianet points]()
 
