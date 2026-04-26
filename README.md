@@ -29,9 +29,9 @@ Here are screenshots from the respective web dashboards of these decentralized n
 
 *(Note: Add your screenshot images here via GitHub!)*
 - **rl-swarm Dashboard:**
-  ![rl-swarm points](Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
+  ![rl-swarm points](Proof-Of-Work/Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
 - **Gaianet Dashboard:**
-  ![Gaianet points]()
+  ![Gaianet points](Proof-Of-Work/Gaianet_Screenshot%202026-04-26%20at%2017.32.40.png)
 
 ## Relevance to Development Support
 Running experimental distributed nodes requires identical problem-solving methodologies to maintaining a game studio's automation pipelines. Whether it's fixing a broken CI/CD runner build, diagnosing why a data processing pipeline fails on a specific OS, or managing background processes, this homelab experience highlights my ability to jump into unfamiliar Linux/Docker environments and establish reliable tools support.
@@ -69,9 +69,9 @@ Running experimental distributed nodes requires identical problem-solving method
 
 *(※ここにGithub上でダッシュボードのスクリーンショット画像をドラッグ・アンド・ドロップで貼り付けてください)*
 - **rl-swarm:**
-  ![rl-swarm points](Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
+  ![rl-swarm points](Proof-Of-Work/Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
 - **Gaianet:**
-  ![Gaianet points]()
+  ![Gaianet points](Proof-Of-Work/Gaianet_Screenshot%202026-04-26%20at%2017.32.40.png)
 
 ## 開発サポート（Development Support）職への親和性
 実験的な分散ノードをゼロベースから運用することは、大規模ゲームスタジオのアセットやビルド自動化パイプラインを維持する上での問題解決手法と完全に一致しています。
