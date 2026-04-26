@@ -1,0 +1,35 @@
+services:
+  aztec-node:
+    container_name: aztec-sequencer
+    network_mode: host # ホストのネットワークに直接アクセス
+    image: aztecprotocol/aztec:latest
+    restart: unless-stopped
+    environment:
+      ETHEREUM_HOSTS: ${ETHEREUM_RPC_URL}
+      L1_CONSENSUS_HOST_URLS: ${CONSENSUS_BEACON_URL}
+      DATA_DIRECTORY: /data
+      VALIDATOR_PRIVATE_KEY: ${VALIDATOR_PRIVATE_KEY}
+      COINBASE: ${COINBASE}
+      P2P_IP: ${P2P_IP}
+      LOG_LEVEL: debug
+      # RPC_ENABLED: "true"
+      # RPC_SERVER_PORT: "8800"
+      # HTTP_RPC_PORT: "8800"
+      # JSON_RPC_PORT: "8800"
+      # PXE_PORT: "8800"
+    entrypoint: >
+      sh -c 'node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network testnet --node --archiver --sequencer'
+#    command: >
+#      start --network alpha-testnet --node --archiver --sequencer 
+#    ports:  # network_mode: host を使用する場合はportsは不要
+#     - 40400:40400/tcp
+#     - 40400:40400/udp
+#     - 8080:8800 # gaianet が8080を使ってるので、左側のホストを8090に>> gaiaを8090で動くように設定
+    volumes:
+      - ./data:/data # 改善: 相対パスに変更して権限問題を解決
+#      - /root/.aztec/alpha-testnet/data/:/data # 問題: rootディレクトリで権限エラー
+#    command: >
+#      sh -c "node /usr/src/app/index.js
+#        --rpcEnabled=true
+#        --rpcServerPort=8080"
+
