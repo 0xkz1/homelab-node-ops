@@ -3,7 +3,7 @@
 ## Overview
 This repository contains my personal infrastructure configurations, custom Dockerfiles, and automation scripts used to deploy, manage, and maintain experimental Web3 and AI compute nodes (e.g., Gensyn, Gaianet, Drosera) in a headless Linux environment.
 
-Many of these alpha-stage projects lack stable official deployment guides or contain bugs in their initialization scripts that prevent them from running reliably. This repository serves as my personal "system journal" and toolkit where I resolve these upstream build failures, patch dependencies, and establish stable execution environments that the official releases often fail to provide.
+Many of these alpha-stage projects are inherently unstable. This repository serves as a record of my work identifying bugs, providing detailed feedback and logs to the core dev teams (often via Discord), and refining my local Docker/Tmux deployment configurations to ensure these decentralized systems operate reliably as they evolve.
 
 ## Repository Contents
 * **`rl-swarm/`**: Contains custom `Dockerfile.webserver` and `.sh` initialization scripts designed to containerize and deploy complex dependency-heavy software.
@@ -38,7 +38,7 @@ Here are the current statuses of my running nodes, proving stable uptime and con
 ## 概要
 このリポジトリは、ヘッドレスLinux環境において実験的なWeb3およびAIノード（Gensyn、Gaianet、Droseraなど）をデプロイ・管理・維持するために作成した、個人的なインフラ構成ファイル、カスタムDockerfile、自動化スクリプトの集積です。
 
-アルファ段階のプロジェクトは公式のデプロイ環境が不安定であったり、初期化スクリプト自体にバグを含んでいることが多々あります。本リポジトリは、そうした「そのままでは動かない」上流の不備を自身で修正・パッチ当てし、コンテナ化や設定の最適化を通じて、誰でも（あるいは私の環境で）安定して稼働できるレベルまで引き上げた結果を記録したものです。
+アルファ段階のプロジェクトは本質的に不安定です。本リポジトリは、ノード運用中に遭遇したバグの特定やコア開発チームへの詳細なフィードバック（ログの提供等）を行い、提供された修正を自身の環境に反映させながら、DockerやTmuxを用いたデプロイ設定を最適化して安定稼働を維持してきたプロセスの記録です。
 
 ## 内容物
 * **`rl-swarm/`**: 複雑な依存関係を持つソフトウェアをコンテナ化してデプロイするためのカスタム `Dockerfile.webserver` および初期化スクリプト (`.sh`)。
