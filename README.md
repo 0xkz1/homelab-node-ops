@@ -21,6 +21,18 @@ Due to the bleeding-edge nature of these distributed systems—which natively pu
 
 Instead of an easily broken master script, I architected a persistent, decoupled execution environment using isolated `tmux` sessions. This design choice isolated dependencies and allowed for surgical updates natively, granular performance monitoring on an individual node basis, and immediate troubleshooting without causing cascading downtime across the entire architecture. 
 
+## Validating `Tmux` Usage
+To prove my proficiency with terminal multiplexing and persistent environments, I have included my personal `.tmux.conf` in the root of this repository. It includes my custom plugin configurations, keybindings, and environment settings that I used to manage these node clusters.
+
+## Proof of Work (Node Dashboards)
+Here are screenshots from the respective web dashboards of these decentralized networks, proving that my nodes were successfully deployed, maintained uptime, and accumulated contribution points:
+
+*(Note: Add your screenshot images here via GitHub!)*
+- **rl-swarm Dashboard:**
+  ![rl-swarm points]()
+- **Gaianet Dashboard:**
+  ![Gaianet points]()
+
 ## Relevance to Development Support
 Running experimental distributed nodes requires identical problem-solving methodologies to maintaining a game studio's automation pipelines. Whether it's fixing a broken CI/CD runner build, diagnosing why a data processing pipeline fails on a specific OS, or managing background processes, this homelab experience highlights my ability to jump into unfamiliar Linux/Docker environments and establish reliable tools support.
 
@@ -48,6 +60,18 @@ Running experimental distributed nodes requires identical problem-solving method
 頻繁に破壊的なアップデートを実行する最先端の分散システムの性質上、統合された完全自動化の起動スクリプトに依存すると、致命的な単一障害点が生じてしまいます。
 
 容易に壊れるマスタースクリプトの代わりに、分離された`tmux`セッションを利用して、永続的で切り離された実行環境を構築しました。この設計アプローチにより、依存関係が細かく切り離され、個別のノードベースできめ細かいパフォーマンス監視が可能になります。結果として、アーキテクチャ全体へ影響を波及させることなく、ノード単体での段階的なアップデートと即座のトラブルシューティングが可能になりました。
+
+## `Tmux` 使用の裏付け
+ターミナルマルチプレクサと永続的な環境構築のスキルを証明するため、このリポジトリのルートに私の個人的な `.tmux.conf` を含めています。このファイルには、ノードクラスターを管理するために私がカスタマイズしたプラグイン、キーバインド、環境設定が記載されています。
+
+## 運用実績の証明 (ノード・ダッシュボード)
+以下は、各分散ネットワークのウェブダッシュボードのスクリーンショットです。これにより、各ノードが正常にデプロイされ、稼働時間を維持し、コントリビューションポイントを獲得していたことが証明されます。
+
+*(※ここにGithub上でダッシュボードのスクリーンショット画像をドラッグ・アンド・ドロップで貼り付けてください)*
+- **rl-swarm:**
+  ![rl-swarm points]()
+- **Gaianet:**
+  ![Gaianet points]()
 
 ## 開発サポート（Development Support）職への親和性
 実験的な分散ノードをゼロベースから運用することは、大規模ゲームスタジオのアセットやビルド自動化パイプラインを維持する上での問題解決手法と完全に一致しています。
