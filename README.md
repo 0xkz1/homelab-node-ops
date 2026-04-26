@@ -8,7 +8,7 @@ Rather than developing the core node software, my focus here was on **DevOps, co
 ## Skills Demonstrated
 - **Linux System Administration:** Persistent process management using CLI tools.
 - **Containerization & CI/CD Troubleshooting:** Deep-diving into failing `Dockerfile`s to fix dependency conflicts, package mismatches, and build errors to ensure stable execution.
-- **Problem Solving & Support:** Diagnosing infrastructure and networking issues in complex, undocumented third-party software—similar to supporting custom internal tools in a large-scale development pipeline. 
+- **Bug Reporting & Core Team Escalation (The Rockstar Workflow):** Rather than working in a silo, I actively functioned as a frontline QA/DevOps tester for these alpha-stage Web3 tools. I encountered undocumented crashes, extracted relevant stack traces, and **communicated directly with the core developers via Discord**. I escalated complex issues to lead programmers, tested their hotfixes in my local environment, and established a continuous feedback loop. This perfectly mirrors the required process of handling incoming support requests and escalating issues to Tools Leads.
 
 ## Included Configurations
 * **`rl-swarm/`**: Contains custom `Dockerfile.webserver` and `.sh` initialization scripts designed to containerize and deploy complex dependency-heavy software.
@@ -36,7 +36,7 @@ Running experimental distributed nodes requires identical problem-solving method
 ## 実証されているスキル
 - **Linuxシステム管理:** CLIツールを使用した継続的なプロセス管理。
 - **コンテナ化およびCI/CDのトラブルシューティング:** 失敗した`Dockerfile`を深く掘り下げ、依存関係の競合やパッケージの不一致、ビルドエラーを修正して安定した実行環境を確保。
-- **問題解決とサポート:** 複雑で細かなドキュメントが整備されていないサードパーティ製ソフトウェアにおけるインフラやネットワークの問題を診断。これは、大規模な開発環境における社内ツールのサポートに酷似しています。
+- **バグ報告と開発コアチームへのエスカレーション (Rockstarのワークフロー):** 私は孤立して作業するのではなく、これらアルファ段階のWeb3ツールの最前線QA/DevOpsテスターとして機能しました。ドキュメント化されていないクラッシュに遭遇した際、関連するスタックトレースを抽出し、**Discord経由でコア開発者と直接コミュニケーションをとりました**。複雑な問題をリードプログラマーにエスカレーションし、彼らのホットフィックスをローカル環境でテストし、継続的なフィードバックループを確立しました。これは、「サポートリクエストを処理し、ツールリードに問題をエスカレーションする」という求人要件のプロセスと完全に一致する強みです。
 
 ## 含まれる構成ファイル
 * **`rl-swarm/`**: カスタムの`Dockerfile.webserver`と初期化スクリプト(`.sh`)。複雑で依存関係の多いソフトウェアをコンテナ化してデプロイするために設計されたものです。
