@@ -23,3 +23,32 @@ Instead of an easily broken master script, I architected a persistent, decoupled
 
 ## Relevance to Development Support
 Running experimental distributed nodes requires identical problem-solving methodologies to maintaining a game studio's automation pipelines. Whether it's fixing a broken CI/CD runner build, diagnosing why a data processing pipeline fails on a specific OS, or managing background processes, this homelab experience highlights my ability to jump into unfamiliar Linux/Docker environments and establish reliable tools support.
+
+---
+
+# (Japanese) ホームラボ：分散型ノードのデプロイと運用
+
+## 概要
+このリポジトリは、ヘッドレスLinux環境において、複数の分散型コンピューティングおよびWeb3のAIノード（Gensyn、Gaianet、Droseraなど）をデプロイし、管理・維持するために使用したインフラ設定、カスタムDockerfile、自動化スクリプトの個人的なコレクションです。
+
+コアとなるノードソフトウェア自体を開発するのではなく、ここでは**DevOps、コンテナ化、システム管理**に焦点を当てています。これら最先端のプロジェクトの多くは、公式のデプロイガイドが不安定です。私はビルドの失敗を診断し、Dockerイメージをカスタマイズして、実行環境を構築・管理しました。
+
+## 実証されているスキル
+- **Linuxシステム管理:** CLIツールを使用した継続的なプロセス管理。
+- **コンテナ化およびCI/CDのトラブルシューティング:** 失敗した`Dockerfile`を深く掘り下げ、依存関係の競合やパッケージの不一致、ビルドエラーを修正して安定した実行環境を確保。
+- **問題解決とサポート:** 複雑で細かなドキュメントが整備されていないサードパーティ製ソフトウェアにおけるインフラやネットワークの問題を診断。これは、大規模な開発環境における社内ツールのサポートに酷似しています。
+
+## 含まれる構成ファイル
+* **`rl-swarm/`**: カスタムの`Dockerfile.webserver`と初期化スクリプト(`.sh`)。複雑で依存関係の多いソフトウェアをコンテナ化してデプロイするために設計されたものです。
+* **`gaianet/`**: AIノードのオーケストレーション用にデプロイされたカスタムノード構成（`config.json`）。
+* **`aztec/`**: マルチコンテナのオーケストレーションを示す`docker-compose.yml`。
+* **`drosera-trap/`** & **`.inference/`**: toml/jsonを使用したノードチューニングへの理解を示すための構成マニフェスト。
+
+## なぜ完全自動化よりも`Tmux`を選んだのか？
+頻繁に破壊的なアップデートを実行する最先端の分散システムの性質上、統合された完全自動化の起動スクリプトに依存すると、致命的な単一障害点が生じてしまいます。
+
+容易に壊れるマスタースクリプトの代わりに、分離された`tmux`セッションを利用して、永続的で切り離された実行環境を構築しました。この設計アプローチにより、依存関係が細かく切り離され、個別のノードベースできめ細かいパフォーマンス監視が可能になります。結果として、アーキテクチャ全体へ影響を波及させることなく、ノード単体での段階的なアップデートと即座のトラブルシューティングが可能になりました。
+
+## 開発サポート（Development Support）職への親和性
+実験的な分散ノードをゼロベースから運用することは、大規模ゲームスタジオのアセットやビルド自動化パイプラインを維持する上での問題解決手法と完全に一致しています。
+CI/CDランナーのビルドエラー修正、データ処理パイプラインが特定のOSで失敗する理由の診断、バックグラウンドプロセスの監視など、このホームラボでのトラブルシューティング経験は、未知のLinux/Docker環境に飛び込み、信頼性の高いツール群のサポートを確立する能力を直接的に証明するものです。
