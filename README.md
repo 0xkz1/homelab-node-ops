@@ -19,6 +19,18 @@ Instead, I orchestrate these nodes using a decoupled environment via `tmux`. Thi
 ## Workflow & Issue Resolution
 Since these are early-stage decentralized networks, undocumented crashes are frequent. My workflow heavily relies on diagnosing infrastructure issues (networking, dependency conflicts), extracting actionable stack traces, and communicating bugs directly with the core dev teams (often via Discord) to test and deploy hotfixes locally.
 
+## Evidence of Operation
+### Terminal Environment
+To maintain professional-grade persistent environments, I use `tmux`. My personal configuration (`.tmux.conf`) is included in the root of this repository, showing my custom plugin and session management setup.
+
+### Operational Dashboards
+Here are the current statuses of my running nodes, proving stable uptime and contribution:
+
+- **rl-swarm Dashboard:**
+  ![rl-swarm](Proof-Of-Work/Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
+- **Gaianet Dashboard:**
+  ![Gaianet](Proof-Of-Work/Gaianet_Screenshot%202026-04-26%20at%2017.32.40.png)
+
 ---
 
 # (Japanese) Homelab Node Ops
@@ -41,3 +53,15 @@ Since these are early-stage decentralized networks, undocumented crashes are fre
 
 ## トラブルシューティングのワークフロー
 開発初期のネットワークツールであるため、予期せぬクラッシュが頻発します。そのため、インフラやネットワークの競合エラーを特定して有用なログを抽出し、Discord等を通じて直接コア開発チームにエラー報告（エスカレーション）を行い、ローカルでテストしてパッチを適用するというサイクルを基本の運用フローとしています。
+
+## 稼働状況の証明
+### 実行環境
+永続的な実行環境をプロフェッショナルに維持するため、`tmux` を活用しています。ルートディレクトリに含まれる `.tmux.conf` は、私がノード管理に使用している実際のプラグイン構成やセッション設定です。
+
+### 運用ダッシュボード
+以下は、各ノードの稼働状況を示すスクリーンショットです。安定した稼働時間とネットワークへの貢献を証明しています。
+
+- **rl-swarm:**
+  ![rl-swarm](Proof-Of-Work/Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
+- **Gaianet:**
+  ![Gaianet](Proof-Of-Work/Gaianet_Screenshot%202026-04-26%20at%2017.32.40.png)
