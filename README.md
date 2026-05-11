@@ -8,11 +8,11 @@ Many of these alpha-stage projects are inherently unstable. This repository serv
 ## Upstream / Related Projects
 These are the upstream projects and references that informed the nodes operated in this repository:
 
-Aztec: https://docs.aztec.network/operate/operators/setup/registering_sequencer
-Gensyn rl-swarm: https://github.com/gensyn-ai/rl-swarm 
-Gensyn BlockAssist: https://github.com/gensyn-ai/blockassist
-Gaianet: https://github.com/gaianet-ai/gaianet-node
-Nexus Network: https://docs.nexus.xyz/network/proving-on-the-layer-1/contribute-via-cli
+- Aztec: https://docs.aztec.network/operate/operators/setup/registering_sequencer
+- Gensyn rl-swarm: https://github.com/gensyn-ai/rl-swarm 
+- Gensyn BlockAssist: https://github.com/gensyn-ai/blockassist
+- Gaianet: https://github.com/gaianet-ai/gaianet-node
+- Nexus Network: https://docs.nexus.xyz/network/proving-on-the-layer-1/contribute-via-cli
 
 
 ## Repository Contents
