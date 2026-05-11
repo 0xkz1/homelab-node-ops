@@ -5,11 +5,21 @@ This repository contains my personal infrastructure configurations, custom Docke
 
 Many of these alpha-stage projects are inherently unstable. This repository serves as a record of my work identifying bugs, providing detailed feedback and logs to the core dev teams (often via Discord), and refining my local Docker/Tmux deployment configurations to ensure these decentralized systems operate reliably as they evolve.
 
+## Upstream / Related Projects
+These are the upstream projects and references that informed the nodes operated in this repository:
+
+Aztec: https://docs.aztec.network/operate/operators/setup/registering_sequencer
+Gensyn rl-swarm: https://github.com/gensyn-ai/rl-swarm 
+Gensyn BlockAssist: https://github.com/gensyn-ai/blockassist
+Gaianet: https://github.com/gaianet-ai/gaianet-node
+Nexus Network: https://docs.nexus.xyz/network/proving-on-the-layer-1/contribute-via-cli
+
+
 ## Repository Contents
 * **`rl-swarm/`**: Contains custom `Dockerfile.webserver` and `.sh` initialization scripts designed to containerize and deploy complex dependency-heavy software.
 * **`gaianet/`**: Custom node configurations (`config.json`) deployed for AI node orchestration.
 * **`aztec/`**: `docker-compose.yml` demonstrating multi-container orchestration.
-* **`drosera-trap/`**: Configuration manifests for node tuning.
+* **`nexus-network/`**: Configuration manifests for node tuning.
 
 ## Execution Strategy (`Tmux`)
 Relying on a unified, fully automated master launch script for these bleeding-edge setups often introduces massive single points of failure due to frequent upstream breaking changes.
@@ -19,7 +29,7 @@ Instead, I orchestrate these nodes using a decoupled environment via `tmux`. Thi
 ## Workflow & Issue Resolution
 Since these are early-stage decentralized networks, undocumented crashes are frequent. My workflow heavily relies on diagnosing infrastructure issues (networking, dependency conflicts), extracting actionable stack traces, and communicating bugs directly with the core dev teams (often via Discord) to test and deploy hotfixes locally.
 
-## Evidence of Operation
+## Results of Operation 
 ### Terminal Environment
 To maintain professional-grade persistent environments, I use `tmux`. My personal configuration (`.tmux.conf`) is included in the root of this repository, showing my custom plugin and session management setup.
 
