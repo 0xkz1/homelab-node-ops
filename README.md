@@ -1,4 +1,4 @@
-# Homelab Node Ops
+# Web3 Node Ops Console
 
 ## Overview
 This repository contains my personal infrastructure configurations, custom Dockerfiles, and automation scripts used to deploy, manage, and maintain experimental Web3 and AI compute nodes (e.g., Gensyn, Gaianet, Drosera) in a headless Linux environment.
@@ -29,12 +29,12 @@ Instead, I orchestrate these nodes using a decoupled environment via `tmux`. Thi
 ## Workflow & Issue Resolution
 Since these are early-stage decentralized networks, undocumented crashes are frequent. My workflow heavily relies on diagnosing infrastructure issues (networking, dependency conflicts), extracting actionable stack traces, and communicating bugs directly with the core dev teams (often via Discord) to test and deploy hotfixes locally.
 
-## Results of Operation 
+## Operational History & Proof of Work
 ### Terminal Environment
 To maintain professional-grade persistent environments, I use `tmux`. My personal configuration (`.tmux.conf`) is included in the root of this repository, showing my custom plugin and session management setup.
 
 ### Operational Dashboards
-Here are the current statuses of my running nodes, proving stable uptime and contribution:
+The following snapshots capture the stable uptime and network contributions achieved during my active operation phase (Jan–Feb 2026):
 
 - **rl-swarm Dashboard:**
   ![rl-swarm](Proof-Of-Work/Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
@@ -43,7 +43,7 @@ Here are the current statuses of my running nodes, proving stable uptime and con
 
 ---
 
-# (Japanese) Homelab Node Ops
+# (Japanese) Web3 Node Ops Console
 
 ## 概要
 このリポジトリは、ヘッドレスLinux環境において実験的なWeb3およびAIノード（Gensyn、Gaianet、Droseraなど）をデプロイ・管理・維持するために作成した、個人的なインフラ構成ファイル、カスタムDockerfile、自動化スクリプトの集積です。
@@ -64,12 +64,12 @@ Here are the current statuses of my running nodes, proving stable uptime and con
 ## トラブルシューティングのワークフロー
 開発初期のネットワークツールであるため、予期せぬクラッシュが頻発します。そのため、インフラやネットワークの競合エラーを特定して有用なログを抽出し、Discord等を通じて直接コア開発チームにエラー報告（エスカレーション）を行い、ローカルでテストしてパッチを適用するというサイクルを基本の運用フローとしています。
 
-## 稼働状況の証明
+## 運用の実績と証明
 ### 実行環境
 永続的な実行環境をプロフェッショナルに維持するため、`tmux` を活用しています。ルートディレクトリに含まれる `.tmux.conf` は、私がノード管理に使用している実際のプラグイン構成やセッション設定です。
 
 ### 運用ダッシュボード
-以下は、各ノードの稼働状況を示すスクリーンショットです。安定した稼働時間とネットワークへの貢献を証明しています。
+以下のスクリーンショットは、2026年1月から2月の主要な稼働期間における、安定したアップタイムとネットワークへの貢献を証明する記録です。
 
 - **rl-swarm:**
   ![rl-swarm](Proof-Of-Work/Rl-swarm_Screenshot%202026-04-26%20at%2017.13.13.png)
